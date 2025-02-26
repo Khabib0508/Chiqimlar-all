@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Umumiy statistika - chiqimlar</title>
+</head>
+<body>
+    <main>
+        <section class="header">
+            <div class="container">
+                <div class="nav flex">
+                    <h3>Umumiy statistika</h3>
+                    <a href="#">
+                        <img src="src/add.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="container">
+                <br>
+                <div class="swipe">
+                    <label class="switch">
+                        <input type="checkbox" id="switch">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <br>
+                <ul class="months">
+                    <li class="month">
+                        <a href="#">Yanvar</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Fevral</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Mart</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Aprel</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">May</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Iyun</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Iyul</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Avgust</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Sentabr</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Oktabr</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Noyabr</a>
+                    </li>
+                    <li class="month">
+                        <a href="#">Dekabr</a>
+                    </li>
+                </ul>
+                <ul class="days" style="display: none;">
+                    <li class="day"><a href="">1</a></li>
+                    <li class="day"><a href="">2</a></li>
+                    <li class="day"><a href="">3</a></li>
+                    <li class="day"><a href="">4</a></li>
+                    <li class="day"><a href="">5</a></li>
+                    <li class="day"><a href="">6</a></li>
+                    <li class="day"><a href="">7</a></li>
+                    <li class="day"><a href="">8</a></li>
+                    <li class="day"><a href="">9</a></li>
+                    <li class="day"><a href="">10</a></li>
+                    <li class="day"><a href="">11</a></li>
+                    <li class="day"><a href="">12</a></li>
+                    <li class="day"><a href="">13</a></li>
+                    <li class="day"><a href="">14</a></li>
+                    <li class="day"><a href="">15</a></li>
+                    <li class="day"><a href="">16</a></li>
+                    <li class="day"><a href="">17</a></li>
+                    <li class="day"><a href="">18</a></li>
+                    <li class="day"><a href="">19</a></li>
+                    <li class="day"><a href="">20</a></li>
+                    <li class="day"><a href="">21</a></li>
+                    <li class="day"><a href="">22</a></li>
+                    <li class="day"><a href="">23</a></li>
+                    <li class="day"><a href="">24</a></li>
+                    <li class="day"><a href="">25</a></li>
+                    <li class="day"><a href="">26</a></li>
+                    <li class="day"><a href="">27</a></li>
+                    <li class="day"><a href="">28</a></li>
+                    <li class="day"><a href="">29</a></li>
+                    <li class="day"><a href="">30</a></li>
+                    <li class="day"><a href="">31</a></li>
+                </ul>
+                <br>
+                <h3 style="float: left;"><span>Iyun-2024</span> uchun chiqimlar</h3>
+                <br>
+                <h2 class="amount">135000</h2>
+                <br>
+                <div class="card">
+                    <div class="limits">
+                        <div class="nums">
+                            <span>Ishlatildi</span>
+                            <p>205.000</p>
+                        </div>
+                        <div class="nums">
+                            <span>Oylik limit</span>
+                            <p>2.000.000</p>
+                        </div>
+                    </div>
+                    <div class="limit-bar">
+                        <div class="limit-progress"></div>
+                    </div>
+                </div>
+                <br>
+                <h3 style="float: left;">Turkumlar ko'rinishida</h3>
+                <br>
+                <br>
+                <div class="card">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                      
+                      
+                      
+   
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="menu">
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <img src="src/main.svg" alt="Main menu">
+                            <span>Umumiy</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <img src="src/calendar.svg" alt="Main menu">
+                            <span>Bu oy</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <img src="src/Vector.svg" alt="Main menu">
+                            <span>Qo'shish</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <img src="src/ticket.svg" alt="Main menu">
+                            <span>Turkumlar</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <img src="src/Vector.svg" alt="Main menu">
+                            <span>Sozlamalar</span>
+                        </a>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </footer>
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Ovqat','Taxi','Uy','Oylik'],
+            datasets: [{
+              label: '# of Votes',
+              data: [35000, 20000, 150000, 65000],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
